@@ -1,0 +1,137 @@
+:host {
+  display: block;
+  background: transparent;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 32px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: white;
+  text-align: left;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.typed-text {
+  color: #f26bce;
+  font-family: monospace;
+  display: inline;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap; 
+}
+
+.btn-outline,
+.btn-filled {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  border: 2px solid #f26bce;
+  background: transparent;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: #f26bce;
+  color: #0f0c29;
+}
+
+.btn-filled {
+  background: linear-gradient(to right, #f26bce, #7f65ff);
+  border: none;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.btn-filled:hover {
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  margin: 20px 0;
+  flex-wrap: wrap; 
+}
+
+.social-icons a {
+  background: #f26bce;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  width: 36px;
+  height: 36px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center;
+  filter: brightness(0) invert(1);
+}
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 80px 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-heading {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,190 @@
+:host {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.what-i-do-section {
+  color: #222;
+  margin-top: 0;
+}
+
+.container {
+  margin-top: 0;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d23ac9;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.text {
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Stack and wrap on smaller screens */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+}
+
+.tech-stack img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-stack img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);
+}
+
+.highlights {
+  text-align: left;
+}
+
+.highlights p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: white;
+}
+.proficiency-section {
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-left: 20px;
+  max-height: none; 
+  overflow: visible;
+}
+
+.proficiency-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.skill {
+  margin-bottom: 30px;
+}
+
+.skill p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.bar {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 999px;
+  overflow: hidden;
+  height: 14px;
+}
+
+.fill {
+  height: 100%;
+  background-color: #a89eff;
+  border-radius: 999px;
+  transition: width 1.2s ease-in-out;
+}
+
+.education-section {
+  max-width: 900px;
+  margin-left: 20px;
+  padding: 0 20px;
+  color: #fff;
+  max-height: none; 
+  overflow: visible;
+}
+
+.education-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.education-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.univ-logo img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.education-text {
+  flex: 1;
+}
+
+.education-text p {
+  margin: 4px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .proficiency-section,
+  .education-section {
+    margin-left: 0;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .proficiency-section h2,
+  .education-section h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .education-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .education-text {
+    text-align: center;
+  }
+}
