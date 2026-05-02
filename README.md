@@ -1,16 +1,81 @@
-# React + Vite
+# 🌌 Shyam Portfolio | Bento Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, aesthetically curated personal portfolio built with **React 19** and **Vite**. This project features a modern **Bento Grid** layout, drawing inspiration from Apple-style dashboards and futuristic interfaces.
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **🍱 Bento Grid Architecture**: A sleek, non-traditional layout that organizes content into high-contrast, asymmetrical blocks.
+- **🌓 Adaptive Theme Engine**: Supports both Dark and Light modes with a preference-aware initialization and persistent storage.
+- **🎨 Glassmorphism UI**: Modern design elements with blurred backgrounds, subtle borders, and neon accents (Orange & Blue).
+- **🚀 Ultra-Fast Performance**: Built on Vite 8 for near-instant HMR (Hot Module Replacement) and optimized build sizes.
+- **🖱️ Custom Interactive Cursor**: A bespoke cursor experience that enhances user engagement.
+- **📱 Fully Responsive**: Seamlessly adapts from massive desktop monitors to mobile devices.
+- **💡 Componentized Design**: Modular architecture including `Hero`, `Skills`, `Projects`, `Services`, and `QuickAccess` blocks.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Core**: [React 19](https://reactjs.org/)
+- **Build Tool**: [Vite 8](https://vitejs.dev/)
+- **Styling**: Vanilla CSS with Modern CSS Variables (Custom Design System)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Animations**: CSS Transitions & Keyframes for smooth micro-interactions
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/shyam-portfolio.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd shyam-portfolio
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Start the development server:
+```bash
+npm run dev
+```
+
+### Production
+
+Build the project for production:
+```bash
+npm run build
+```
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/          # React components organized by feature
+│   ├── Dashboard/      # Main Bento Grid blocks
+│   ├── Navbar/         # Persistent navigation
+│   ├── CustomCursor/   # Interactive cursor logic
+│   └── ...             # Other feature components
+├── assets/              # Static assets (images, svgs)
+├── App.jsx              # Main application layout and routing
+├── index.css            # Global design tokens and resets
+└── main.jsx             # React entry point
+```
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+*Created with ❤️ by Shyam*
